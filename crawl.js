@@ -1,6 +1,6 @@
 const {JSDOM} = require('jsdom')
 
-function getURLsFromHTML(htmlBody, baseURL){
+function getURLsFromHTML(htmlBody, baseURL){//idk
     const urls = []
     const dom = new JSDOM(htmlBody) //create an object rebresenting the html tree structure
     const linkElements = dom.window.document.querySelectorAll('a')
